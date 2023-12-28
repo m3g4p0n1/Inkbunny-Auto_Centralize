@@ -53,10 +53,10 @@ function checkIMG(){
         image.style.setProperty('height','auto')
     }
 
-    if (iterations < 5)
+    if (iterations < 10)
     {
         // Idk how to reliably detect when the picture finished loading, so I repeat the same function a few times to make sure it resizes :v
-        setTimeout(checkIMG,500)
+        setTimeout(checkIMG,200)
         iterations += 1
     }
 }
